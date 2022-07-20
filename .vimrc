@@ -1,4 +1,4 @@
-" Activa sintaxi amb colors:
+" Activa sintaxi amb colors
 syntax on
 
 " mostra números de línies:
@@ -31,50 +31,45 @@ set colorcolumn=80
 
 " colorscheme molón
 " colorscheme wolfpack
-colorscheme onehalfdark
+" colorscheme onehalfdark
 
 set belloff=all
 
 " mira de no tallar paraules al tenir línies massa extenses
 set lbr
 
+
 " Configuració minimap
 let g:minimap_width = 10
 let g:minimap_auto_start = 1
 let g:minimap_auto_start_win_enter = 1
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""""""""""""""""""""""""""""""""""
-" Part control·lada per vim-plug                                              
-"""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
+" Part control·lada per vim-plug
+"""""""""""""""""""""""""""""""""""""""
 
 " Gestor de plugins de vim vim-plug
 call plug#begin('~/.vim/plugged')
 
-" Afegir lightline
-" Plug 'itchyny/lightline.vim'
-
 " Afegir el colorscheme bluewery
-Plug 'relastle/bluewery.vim'
+" Plug 'relastle/bluewery.vim'
 
-" Afegir el colorscheme onehalf
-" Plug 'sonph/onehalf.vim'
+" Afegir el colorscheme onedark
+Plug 'joshdick/onedark.vim'
 
-" Afegir plugin minimap.
+" Afegir plugin minimap
 Plug 'wfxr/minimap.vim'
+
 
 " Final de la part de vim-plug
 call plug#end()
 
-" colorscheme onehalfdark
-" let g:lightline.colorscheme='onehalfdark'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" For dark
-" colorscheme bluewery
-" let g:lightline = { 'colorscheme': 'bluewery' }
-
-" For light
 " colorscheme bluewery-light
-" let g:lightline = { 'colorscheme': 'bluewery_light' }
+" let g:lightline = { 'colorscheme' : 'bluewery_light' }
 
+colorscheme onedark
 
